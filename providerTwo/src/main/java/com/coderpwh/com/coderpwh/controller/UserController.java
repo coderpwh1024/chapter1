@@ -12,6 +12,12 @@ public class UserController {
 
     @RequestMapping(value = "/info", method = RequestMethod.GET)
     public String getUserInfo() {
+
+        try {
+
+        }catch (Exception e){
+            e.printStackTrace();
+        }
         return "This is User Service My name is Jack";
 
     }
