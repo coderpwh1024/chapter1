@@ -14,8 +14,8 @@ public class UserController {
     public String getUserInfo() {
 
         try {
-             // 休眠2秒
-             Thread.sleep(10000);
+             // 休眠10s
+             Thread.sleep(3000);
         }catch (Exception e){
             e.printStackTrace();
         }
