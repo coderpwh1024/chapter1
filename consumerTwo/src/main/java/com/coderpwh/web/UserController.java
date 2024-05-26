@@ -17,16 +17,7 @@ public class UserController {
 
     @RequestMapping(value = "/info", method = RequestMethod.GET)
     public String getUserInfo() {
-
-        long start = System.currentTimeMillis();
-        String str = providerTwoClient.getUserInfo();
-        long end = System.currentTimeMillis();
-
-        long result = (end - start) / 100;
-
-        return "响应结果为:" + str + " ,耗时为:" + result + "秒";
-
-
+        return providerTwoClient.getUserInfo();
     }
 
 }
