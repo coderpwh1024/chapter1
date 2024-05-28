@@ -10,6 +10,7 @@
         <module name="consumerTwo" />
         <module name="provider" />
         <module name="consumer" />
+        <module name="gateway" />
       </profile>
     </annotationProcessing>
   </component>

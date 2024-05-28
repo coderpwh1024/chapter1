@@ -13,6 +13,7 @@
         <module>consumer</module>
         <module>providerTwo</module>
         <module>consumerTwo</module>
+        <module>gateway</module>
     </modules>
 
 
