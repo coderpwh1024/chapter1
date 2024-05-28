@@ -15,7 +15,7 @@ public class UserController {
 
         try {
              // 休眠10s
-//             Thread.sleep(3000);
+             Thread.sleep(300);
         }catch (Exception e){
             e.printStackTrace();
         }
