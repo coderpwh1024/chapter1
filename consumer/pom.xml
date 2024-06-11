@@ -13,10 +13,6 @@
     <artifactId>consumer</artifactId>
 
 
-    <properties>
-        <java.version>1.8</java.version>
-    </properties>
-
     <dependencies>
         <!--必须引入starter-web才能注册到nacos中去-->
         <dependency>
