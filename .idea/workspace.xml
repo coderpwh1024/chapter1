@@ -5,21 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cbc6daf7-f4ee-4c70-bfbc-106cba8294d9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/eclipseCodeFormatter.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer/target/classes/bootstrap-qa.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer/target/classes/bootstrap.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumerTwo.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumerTwo/target/classes/bootstrap-qa.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumerTwo/target/classes/bootstrap.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/target/classes/bootstrap-qa.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/target/classes/bootstrap.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/providerTwo/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/providerTwo/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/providerTwo/target/classes/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/providerTwo/target/classes/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,8 +47,10 @@
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Spring Boot.ProviderApplication.executor": "Run",
-    "Spring Boot.ProviderTwoApplication.executor": "Run",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.GatewayApplication.executor": "Debug",
+    "Spring Boot.ProviderApplication.executor": "Debug",
+    "Spring Boot.ProviderTwoApplication.executor": "Debug",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/coderpwh/workSpace/sc_work/chapter1",
     "node.js.detected.package.eslint": "true",
@@ -77,6 +66,9 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
   <component name="RunDashboard">
     <option name="configurationTypes">
       <set>
@@ -86,8 +78,9 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ProviderApplication">
+  <component name="RunManager" selected="Spring Boot.GatewayApplication">
     <configuration name="ConsumerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="ACTIVE_PROFILES" value="qa" />
       <module name="consumer" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.coderpwh.ConsumerApplication" />
       <method v="2">
@@ -95,6 +88,7 @@
       </method>
     </configuration>
     <configuration name="ConsumerTwoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="ACTIVE_PROFILES" value="qa" />
       <module name="consumerTwo" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.coderpwh.ConsumerTwoApplication" />
       <method v="2">
@@ -102,6 +96,7 @@
       </method>
     </configuration>
     <configuration name="GatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="ACTIVE_PROFILES" value="qa" />
       <module name="gateway" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.coderpwh.GatewayApplication" />
       <method v="2">
@@ -117,6 +112,7 @@
       </method>
     </configuration>
     <configuration name="ProviderTwoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="ACTIVE_PROFILES" value="qa" />
       <module name="providerTwo" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.coderpwh.ProviderTwoApplication" />
       <extension name="coverage">
@@ -157,7 +153,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1718170374578</updated>
-      <workItem from="1718170375834" duration="310000" />
+      <workItem from="1718170375834" duration="1767000" />
     </task>
     <servers />
   </component>
