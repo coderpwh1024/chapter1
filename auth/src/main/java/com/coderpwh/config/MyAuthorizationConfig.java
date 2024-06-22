@@ -57,6 +57,7 @@ public class MyAuthorizationConfig extends AuthorizationServerConfigurerAdapter 
      *
      * @param securityConfigurer
      */
+    @Override
     public void configure(AuthorizationServerSecurityConfigurer securityConfigurer) {
         securityConfigurer
                 .tokenKeyAccess("permitAll()")
@@ -69,6 +70,7 @@ public class MyAuthorizationConfig extends AuthorizationServerConfigurerAdapter 
      * 配置客户端模式
      * @param clients
      */
+    @Override
     public void configure(ClientDetailsServiceConfigurer clients) throws Exception {
 
         //内存模式
@@ -91,6 +93,68 @@ public class MyAuthorizationConfig extends AuthorizationServerConfigurerAdapter 
     }
 
 
+    /***
+     *  令牌配置
+     * @return
+     */
+    @Bean
+    public AuthorizationServerTokenServices tokenServices() {
+        DefaultTokenServices services = new DefaultTokenServices();
+
+        // 客户端端配置策略
+        services.setClientDetailsService(clientDetailsService);
+
+        // 令牌刷新
+        services.setSupportRefreshToken(true);
+
+        // 令牌服务
+        services.setTokenStore(tokenStore);
+
+        // token过期时间
+        services.setAccessTokenValiditySeconds(60 * 60 * 2);
+
+        // token刷新过期时间
+        services.setRefreshTokenValiditySeconds(60 * 60 * 24 * 3);
+
+        // 设置令牌增加，jwt使用
+        services.setTokenEnhancer(jwtAccessTokenConverter);
+
+        return services;
+    }
+
+
+    /***
+     * 授权码模式的service，使用授权码模式的authorization_code 注入
+     * @return
+     */
+    @Bean
+    public AuthorizationCodeServices authorizationCodeServices() {
+        return new InMemoryAuthorizationCodeServices();
+
+    }
+
+
+    /***
+     * 配置令牌访问的端点
+     *
+     * authorizationCodeServices：授权码模式所需的servcie
+     * authenticationManager: 密码模式所需要manager
+     * tokenServices: 令牌管理
+     * allowedTokenEndpointRequestMethods：post提交方式
+     *
+     *
+     * @param endpointsConfigurer
+     */
+    @Override
+    public void configure(AuthorizationServerEndpointsConfigurer endpointsConfigurer) {
+
+        endpointsConfigurer
+                .authorizationCodeServices(authorizationCodeServices())
+                .authenticationManager(authenticationManager)
+                .tokenServices(tokenServices())
+                .allowedTokenEndpointRequestMethods(HttpMethod.POST);
+
+    }
 
 
 }
