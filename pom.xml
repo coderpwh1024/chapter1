@@ -14,6 +14,7 @@
         <module>providerTwo</module>
         <module>consumerTwo</module>
         <module>gateway</module>
+        <module>auth</module>
     </modules>
 
 
