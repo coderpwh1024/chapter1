@@ -2,11 +2,15 @@ package com.coderpwh.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.coderpwh.model.TRole;
-import com.coderpwh.model.TUser;
 
 import java.util.List;
 
-public interface TRoleService  extends IService<TRole>  {
+/**
+* @author life
+* @description 针对表【t_role】的数据库操作Service
+* @createDate 2024-01-20 13:28:28
+*/
+public interface TRoleService   {
 
     List<String> selectAllByUsername(String username);
 }
