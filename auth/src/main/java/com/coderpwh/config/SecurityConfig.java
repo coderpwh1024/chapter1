@@ -1,7 +1,6 @@
 package com.coderpwh.config;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import com.coderpwh.service.impl.JwtTokenUserDetailsService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -10,14 +9,15 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 
-import javax.naming.AuthenticationException;
+import javax.annotation.Resource;
 
 @Configuration
 @EnableWebSecurity
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
 
-    @Autowired
+
+    @Resource
     private JwtTokenUserDetailsService userDetailsService;
 
     /***
@@ -39,7 +39,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
 
     @Override
-    protected void configure(AuthenticationManagerBuilder auth) {
+    protected void configure(AuthenticationManagerBuilder auth) throws Exception {
         auth.userDetailsService(userDetailsService);
     }
 
