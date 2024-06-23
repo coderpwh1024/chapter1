@@ -1,4 +1,4 @@
-package org.example.model;
+package com.coderpwh.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

@@ -1,4 +1,4 @@
-package org.example.model;
+package com.coderpwh.model;
 
 import lombok.Data;
 import org.springframework.security.core.GrantedAuthority;

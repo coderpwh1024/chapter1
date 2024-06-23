@@ -1,9 +1,9 @@
 package com.coderpwh.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.coderpwh.model.TUser;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
-import org.example.model.TUser;
 
 /**
 * @author life

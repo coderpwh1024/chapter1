@@ -1,4 +1,4 @@
-package org.example.model;
+package com.coderpwh.model;
 
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
