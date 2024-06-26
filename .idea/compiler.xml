@@ -9,6 +9,7 @@
         <module name="consumerTwo" />
         <module name="providerTwo" />
         <module name="provider" />
+        <module name="auth" />
         <module name="consumer" />
         <module name="gateway" />
       </profile>

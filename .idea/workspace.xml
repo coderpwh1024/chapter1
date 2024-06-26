@@ -4,14 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cbc6daf7-f4ee-4c70-bfbc-106cba8294d9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/eclipseCodeFormatter.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="cbc6daf7-f4ee-4c70-bfbc-106cba8294d9" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -53,7 +57,7 @@
     "Spring Boot.ProviderTwoApplication.executor": "Debug",
     "jdk.selected.JAVA_MODULE": "1.8",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/coderpwh/workSpace/sc_work/chapter1",
+    "last_opened_file_path": "/Users/coderpwh/workSpace/sc_work/chapter1/gateway/src/main/java/com/coderpwh/model",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -69,6 +73,11 @@
 }]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/gateway/src/main/java/com/coderpwh/model" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="configurationTypes">
@@ -156,6 +165,7 @@
       <updated>1718170374578</updated>
       <workItem from="1718170375834" duration="7312000" />
       <workItem from="1719041241689" duration="611000" />
+      <workItem from="1719237551674" duration="5031000" />
     </task>
     <servers />
   </component>

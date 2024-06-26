@@ -32,6 +32,5 @@ public class AccessTokenConfig {
         converter.setSigningKey(SIGN_KEY);
         return converter;
     }
-}
 
 }
